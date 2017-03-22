@@ -1,0 +1,15 @@
+<h1 class="text-center">Willkommen zu "IT-Girl - was sonst!"</h1>
+<h2>Wählt euer Team aus</h2>
+
+<ul class="media-list">
+    <li class="media" ng-repeat="team in main.teams track by $index">
+        <a ng-href="#!/{{team.id}}/names" ng-click="main.setTeam(team.id)">
+            <div class="media-left media-middle">
+                <img class="media-object" src="{{team.image}}">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{team.name}}</h4>
+            </div>
+        </a>
+    </li>
+</ul>
