@@ -2,6 +2,6 @@
 <form>
     <div class="form-group" ng-repeat="question in main.questions track by $index">
         <label>{{question}}</label>
-        <textarea rows="3" class="form-control" placeholder="Antwort" ng-model="data[question][main.routeParams.teamId]" ng-model-options="{debounce:{'default': 500}}"></textarea>
+        <textarea rows="5" class="form-control" placeholder="Antwort" ng-model="data[question][main.routeParams.teamId]" ng-model-options="{debounce:{'default': 500}}"></textarea>
     </div>
 </form>
