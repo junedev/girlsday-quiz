@@ -1,23 +1,7 @@
 <h2>Beantwortet soviele Fragen wie ihr könnt</h2>
 <form>
-    <div class="form-group">
-        <label>Hier steht eine Frage ...</label>
-        <textarea rows="3" class="form-control" placeholder="Antwort" ng-model="data[main.routeParams.teamId]['q1']" ng-model-options="{debounce:{'default': 500}}"></textarea>
-    </div>
-    <div class="form-group">
-        <label>Hier steht eine Frage ...</label>
-        <textarea rows="3" class="form-control" placeholder="Antwort" ng-model="data[main.routeParams.teamId]['q2']" ng-model-options="{debounce:{'default': 500}}"></textarea>
-    </div>
-    <div class="form-group">
-        <label>Hier steht eine Frage ...</label>
-        <textarea rows="3" class="form-control" placeholder="Antwort" ng-model="data[main.routeParams.teamId]['q3']" ng-model-options="{debounce:{'default': 500}}"></textarea>
-    </div>
-    <div class="form-group">
-        <label>Hier steht eine Frage ...</label>
-        <textarea rows="3" class="form-control" placeholder="Antwort" ng-model="data[main.routeParams.teamId]['q4']" ng-model-options="{debounce:{'default': 500}}"></textarea>
-    </div>
-    <div class="form-group">
-        <label>Hier steht eine Frage ...</label>
-        <textarea rows="3" class="form-control" placeholder="Antwort" ng-model="data[main.routeParams.teamId]['q5']" ng-model-options="{debounce:{'default': 500}}"></textarea>
+    <div class="form-group" ng-repeat="question in main.questions track by $index">
+        <label>{{question}}</label>
+        <textarea rows="3" class="form-control" placeholder="Antwort" ng-model="data[question][main.routeParams.teamId]" ng-model-options="{debounce:{'default': 500}}"></textarea>
     </div>
 </form>

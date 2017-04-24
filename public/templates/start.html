@@ -5,7 +5,7 @@
     <li class="media" ng-repeat="team in main.teams track by $index">
         <a ng-href="#!/{{team.id}}/names" ng-click="main.setTeam(team.id)">
             <div class="media-left media-middle">
-                <img class="media-object" src="{{team.image}}">
+                <img class="media-object logo" src="{{team.image}}">
             </div>
             <div class="media-body">
                 <h4 class="media-heading">{{team.name}}</h4>
