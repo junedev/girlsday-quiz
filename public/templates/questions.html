@@ -1,7 +1,12 @@
-<h2>Beantwortet soviele Fragen wie ihr könnt</h2>
-<form>
-    <div class="form-group" ng-repeat="question in main.questions track by $index">
-        <label>{{question}}</label>
-        <textarea rows="5" class="form-control" placeholder="Antwort" ng-model="data[question][main.routeParams.teamId]" ng-model-options="{debounce:{'default': 500}}"></textarea>
-    </div>
-</form>
+<div ng-show="main.team">
+    <h2>Beantwortet soviele Fragen wie ihr könnt</h2>
+    <form>
+        <div class="form-group" ng-repeat="question in main.questions track by $index">
+            <label>{{question}}</label>
+            <textarea rows="5" class="form-control" placeholder="Antwort" ng-model="data[question][main.routeParams.teamId]" ng-model-options="{debounce:{'default': 500}}"></textarea>
+        </div>
+    </form>
+</div>
+<div ng-show="!main.team">
+    <h3>Kein Abgucken! Melde dich bei den Organisatoren, falls du ausversehen das falsche Team ausgewählt hast.</h3>
+</div>

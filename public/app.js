@@ -11,6 +11,9 @@ function MainRouter($routeProvider, $locationProvider){
     .when("/:teamId/questions", {
       templateUrl: "templates/questions.html"
     })
+    .when("/userid", {
+      templateUrl: "templates/userid.html"
+    })
     .when("/", {
       templateUrl: "templates/start.html"
     })
