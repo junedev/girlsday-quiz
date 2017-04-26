@@ -20,18 +20,18 @@ function MainController ($scope, $routeParams, $window, $firebaseObject) {
   ]
 
   self.questions = [
-    'Wie gelangen Internetseiten in den Browser?',
-    'Warum wird Ruby als einfache Programmiersprache bezeichnet?',
-    'Wofür benötigen Unternehmen IT–Projektmanager?',
-    'Was unterscheidet einen IT-Projektmanager von einem normalen Projektmanager?',
-    'Wie nennt man jemanden, der sich unberechtigten Zugriff auf einen fremden Computer verschafft?',
-    'Wie sieht ein sicheres Passwort aus?',
-    'Auf welchen vier Gewerken beruht die Game Entwicklung?',
-    'Was ist der Unterschied zwischen Digital Art und Game Design?',
-    'Was bedeutet das Logo am Stand IT Beratung?',
-    'Welche Fähigkeiten brauchen IT Berater/Innen?',
-    'Wer hat den Begriff "Internet of Things" erstmals verwendet und wann war das ungefähr?',
-    'Welchen Zusammenhang gibt es zwischen dem "Internet der Dinge" und Mode?'
+    'a) Wie gelangen Internetseiten in den Browser?',
+    'b) Was ist der Unterschied zwischen Frontend- und Backend-Entwicklung?',
+    'c) Wofür benötigen Unternehmen IT–Projektmanager?',
+    'd) Was unterscheidet einen IT-Projektmanager von einem normalen Projektmanager?',
+    'e) Wie nennt man jemanden, der sich unberechtigten Zugriff auf einen fremden Computer verschafft?',
+    'f) Wie sieht ein sicheres Passwort aus?',
+    'g) Auf welchen vier Gewerken beruht die Game Entwicklung?',
+    'h) Was ist der Unterschied zwischen Digital Art und Game Design?',
+    'i) Was bedeutet das Logo am Stand IT Beratung?',
+    'j) Welche Fähigkeiten brauchen IT Berater/Innen?',
+    'l) Wer hat den Begriff "Internet of Things" erstmals verwendet und wann war das ungefähr?',
+    'm) Welchen Zusammenhang gibt es zwischen dem "Internet der Dinge" und Mode?'
   ]
 
   self.routeParams = $routeParams
